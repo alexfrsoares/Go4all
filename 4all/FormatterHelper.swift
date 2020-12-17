@@ -9,11 +9,11 @@ import Foundation
 
 struct FormatterHelper {
     
-    static func colorSwitch(date: Date) -> String {
+    static func timestampValue(date: Date) -> String {
         let seconds = DateFormatter()
-        seconds.dateFormat = "SSSS"
+        seconds.dateFormat = "ss"
         
-        let tenth = seconds.string(from: date)
-        return String(tenth.prefix(1))
+        let colorNumber = seconds.string(from: date)
+        return String(colorNumber.suffix(1))
     }
 }

@@ -8,26 +8,24 @@
 import Foundation
 import UIKit
 
-enum ViewColors: CaseIterable {
-    
-}
-
 class ViewController: UIViewController {
-
-    @IBOutlet weak var backgroundView: UIView!
     
     @IBAction func changeColorButtonTap(_ sender: UIButton) {
-        print(setColor(timestamp: Date()))
-        backgroundView.backgroundColor = UIColor{_ in UIColor.red}
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(setCase(timestamp: Date()))
+        let caseNumber = Int(setCase(timestamp: Date())) ?? 0
+        view.backgroundColor = setColor(caseColor: caseNumber)
     }
     
-    func setColor(timestamp: Date) -> String {
-        return FormatterHelper.colorSwitch(date: timestamp)
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-
+    
+    func setCase(timestamp: Date) -> String {
+        return FormatterHelper.timestampValue(date: timestamp)
+    }
+    
+    func setColor(caseColor: Int) -> UIColor {
+        return ColorConfigurator.colorSelector(value: caseColor)
+    }
 }
 
