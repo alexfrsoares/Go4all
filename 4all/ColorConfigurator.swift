@@ -10,9 +10,20 @@ import UIKit
 
 struct ColorConfigurator {
     
-    static func colorSelector(value: Int) -> UIColor {
+    static func selectColor(number: Int) -> UIColor {
         
-        let viewColor = value
+//        let colors = [
+//            UIColor.white,
+//            UIColor.blue
+//        ]
+//
+//        if colors.count > number {
+//            return colors[number]
+//        }
+//
+//        return UIColor.white
+//
+        let viewColor = number
         
         switch viewColor {
         case 0:

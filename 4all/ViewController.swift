@@ -11,21 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBAction func changeColorButtonTap(_ sender: UIButton) {
-        print(setCase(timestamp: Date()))
-        let caseNumber = Int(setCase(timestamp: Date())) ?? 0
-        view.backgroundColor = setColor(caseColor: caseNumber)
+        let colorNumber = getColorNumber()
+        print(colorNumber)
+        view.backgroundColor = getColor(number: colorNumber)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    func setCase(timestamp: Date) -> String {
-        return FormatterHelper.timestampValue(date: timestamp)
+    func getColorNumber() -> Int {
+        return ColorNumberHelper.newValue(date: Date())
     }
     
-    func setColor(caseColor: Int) -> UIColor {
-        return ColorConfigurator.colorSelector(value: caseColor)
+    func getColor(number: Int) -> UIColor {
+        return ColorConfigurator.selectColor(number: number)
     }
 }
 
