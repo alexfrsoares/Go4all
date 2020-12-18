@@ -1,7 +1,7 @@
 # Go4all
 4all - Exercício Formação Mobile iOS
 
-Projeto mobile desenvolvido durante segunda etapa do processo de seleção na 4all.
+Projeto mobile desenvolvido durante a segunda etapa do processo de seleção na 4all.
 
 O aplicativo consiste numa tela com o texto Go4all e um botão centralizados. 
 Ao ser pressionado o botão, a cor do fundo da tela é alterada com base na casa da unidade do segundo do horário atual.
