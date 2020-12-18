@@ -12,12 +12,10 @@ class ViewController: UIViewController {
     
     @IBAction func changeColorButtonTap(_ sender: UIButton) {
         let colorNumber = getColorNumber()
-        
-        print(colorNumber)
-        
-        view.backgroundColor = getColor(number: colorNumber)
-        
-        go4all.textColor = getTextColor(viewColorNumber: colorNumber)
+        UIView.animate(withDuration: 0.5) {
+            self.view.backgroundColor = self.getColor(number: colorNumber)
+            self.go4all.textColor = self.getTextColor(viewColorNumber: colorNumber)
+        }
     }
     
     @IBOutlet weak var go4all: UILabel!
