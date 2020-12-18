@@ -8,4 +8,4 @@ Ao ser pressionado o botão, a cor do fundo da tela é alterada com base na casa
 Para cada segundo há uma cor pré-definida.
 A cor do texto alterna entre preta e branca, de acordo definições feitas com base na tonalidade da cor de fundo da tela.
 
-![image](http://www.futgamers.com.br/nimdog/go4all.png)
+![image](http://www.futgamers.com.br/alex/go4all.png)
