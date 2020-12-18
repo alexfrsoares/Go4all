@@ -2,7 +2,7 @@
 //  ColorNumberHelper.swift
 //  4all
 //
-//  Created by Swift & Cacau on 16/12/20.
+//  Created by Alex Freitas Soares on 16/12/20.
 //
 
 import Foundation

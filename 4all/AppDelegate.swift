@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  4all
 //
-//  Created by Swift & Cacau on 15/12/20.
+//  Created by Alex Freitas Soares on 15/12/20.
 //
 
 import UIKit
